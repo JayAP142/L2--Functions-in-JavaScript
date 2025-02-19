@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1 id="headA"></h1>
+    <h1 id="headB"></h1>
+    <button style="background-color: royalblue; color: red;" onclick="Intro()">Click Here!</button>
+    <button style="background-color: royalblue; color: red;" onclick="Outro(greeting='See you later')">Click Here!</button>
+    <button style="background-color: royalblue; color: red;" onclick="Outro(greeting='How are you?')">Click Here!</button>
+    
+    <button style="background-color: royalblue; color: red;" onclick="division(12,4)">Click Here!</button>
+    
+    <script>
+        function Intro(){
+            document.getElementById("headA").innerHTML="Welcome to JavaScript"
+        }
+        function  Outro(greeting){
+            document.getElementById("headB").innerHTML= greeting
+        }
+
+      
+        var division= function(a,b){
+            document.getElementById("headA").innerHTML= a/b 
+        }
+    </script>
+
+    
+</body>
+</html>
