@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <h2 id="H2"></h2>
+    <h3 id="H3"></h3>
+    <h1 id="H4"></h1>
+    <h2 id="H5"></h2>
+    <h3 id="H6"></h3>
+    <button style="background-color: gold; color: black; size: 50px;" onclick="sum(6,9,12,15)">Answer</button> <br> <br>
+    <button  style="background-color: gold; color: black; size: 50px;" onclick="difference(6+9-15)">Answer</button> <br> <br>
+    <button  style="background-color: gold; color: black; size: 50px;" onclick="product(9,12)">Answer</button> <br> <br>
+    <button style="background-color: gold; color: black; size: 50px;" onclick="quotient(6,9,12,15)">Answer</button> <br> <br>
+    <button style="background-color: gold; color: black; size: 50px;" onclick="exponent(2**6,9,12,15)">Answer</button> <br> <br>
+    <button style="background-color: gold; color: black; size: 50px;" onclick="BODMAS(2,4,5,10)">Answer</button>
+
+    <script>
+        var sum= function(a,b,c,d){
+            document.getElementById("H1").innerHTML= a+b+c+d
+        }
+        var difference= function(a,b,c,d){
+            document.getElementById("H2").innerHTML=a,b,c,d
+        }
+        var product= function(a,b,c,d){
+            document.getElementById("H3").innerHTML= a*b
+        }
+        var quotient= function(a,b,c,d){
+            document.getElementById("H4").innerHTML=(a*b)/(c*d)
+        }
+        var exponent= function(a,b,c,d){
+            document.getElementById("H5").innerHTML=2**c
+        }
+        var BODMAS= function(a,b,c,d){
+            document.getElementById("H6").innerHTML=2**c*(a+b)/d
+        }
+    </script>
+
+
+
+
+
+
+    </body>
+</html>
